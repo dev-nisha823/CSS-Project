@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    /* we have on the perspective and can give any value it doesn't matter */
+    /* perspecitve on bcz we want to see the parallax effect means 3D */
+    perspective: 10px;
+}
+.header{
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    /* if we don't write transform-style then it will give 2D effect not 3D */
+    transform-style: preserve-3d;
+    /* z-index to overlap the images */
+    z-index:-1;
+}
+.bg-img{
+    transform: translateZ(-40px) scale(6);
+}
+
+.forg-img{
+    transform: translateZ(-15px) scale(2);  
+    top:17em;
+}
+
+.bg-img, .forg-img{
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
+
+h1{
+    position: absolute;
+    top:5rem;
+    text-transform: uppercase;
+    font-size: 10em;
+    letter-spacing: 10px;
+    font-family: sans-serif;
+    color: white;
+    text-shadow: 5px 5px 10px rgb(50, 50, 50, 0.8);
+}
+
+main{
+    background-color: black;
+    color:white;
+    padding: 5em 0;
+}
+
+h2{
+    padding: 0 10rem;
+    font-size: 2.5em;
+    font-family: sans-serif;
+    text-shadow: 5px 5px 5px rgba(184, 180, 180, 0.8);
+}
+.sports-heading{
+    position: absolute;
+    padding:1em 0.5em;
+    top:42%;
+    left:50%;
+    background-color: white;
+    text-transform: uppercase;
+    color: black;
+    font-size: 1.5em;
+    font-family: sans-serif;
+}
+.heading-explanation{
+    font-size: 1em;
+    font-family:Arial, Helvetica, sans-serif;
+    margin:5rem 0;
+    padding:0 10rem;
+    text-align: justify;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 1.5em;
+}
+
+.bg{
+    position:relative;
+    width:100%;
+    background-attachment: fixed;
+    height:500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg1{
+    width:100%;
+    background-image: url("../parallaxEffect/img/basketball.jpg");
+}
+ 
+.bg2{
+    background-image: url("../parallaxEffect/img/football.jpg");
+}
+.bg3{
+    background-image: url("../parallaxEffect/img/volleyball.jpg");
+}
+

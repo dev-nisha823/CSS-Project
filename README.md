@@ -8,3 +8,15 @@ Q: Difference between a Library and Framework?
  ``` js
 <script src="demo_async.js" async></script>
 ```
+```python
+def greet(name):
+    print(f"Hello, {name}!")
+```
+`print()`
+
+# heading1
+## heading2
+
+* heading1
+* heading2
+ * heading1
